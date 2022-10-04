@@ -54,7 +54,7 @@ body {
   padding: 1px;
   border-radius: 5px;
   background-color: #fffffffd;
-  width: 400px;
+  width: 500px;
 }
 
 .header {
@@ -92,7 +92,7 @@ body {
 }
 
 .task {
-  background: #f4f4f431;
+  background: #4c4b4b31;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
@@ -103,6 +103,7 @@ body {
 }
 
 .task h3 {
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;

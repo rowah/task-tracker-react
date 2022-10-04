@@ -2,7 +2,8 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
-function App() {
+const App = () => {
+  //state is now at the top level
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -29,6 +30,6 @@ function App() {
       <Tasks tasks={tasks} />
     </div>
   );
-}
+};
 
 export default App;

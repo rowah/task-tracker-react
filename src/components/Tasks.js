@@ -1,3 +1,4 @@
+import Task from "./Task";
 //rac
 
 const Tasks = ({ tasks }) => {
@@ -6,9 +7,11 @@ const Tasks = ({ tasks }) => {
   return (
     <>
       {tasks.map((task) => (
-        <h3 key={task.id} style={{ color: "black", marginLeft: "1em" }}>
-          {task.text}
-        </h3>
+        <Task
+          key={task.id}
+          task={task}
+          style={{ color: "black", marginLeft: "1em" }}
+        />
       ))}
     </>
   );
