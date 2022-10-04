@@ -9,7 +9,8 @@ const Header = (props) => {
   );
 };
 //create a default prop which would show if none is passed on the App js
-//if the default props also does not exist, nothing shows on h1 since it is not declared on the App .js JSE
+//if the default props also does not exist, nothing shows on h1 since it is not passed on the App .js JSE
+//passing title on the <Header /> in the App js would overwrite the default
 Header.defaultProps = {
   title: "Title from Default Props",
 };
