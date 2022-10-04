@@ -10,9 +10,12 @@ const Header = ({ title }) => {
     </header>
   );
 };
+Header.defaultProps = {
+  title: "Title from Default Props",
+};
 
 Header.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired, //if required
 };
 
 export default Header;
